@@ -1,0 +1,60 @@
+﻿ @model IEnumerable<WebApplication42.Employee>
+@{
+    ViewBag.Title = "Index";
+}
+<<!--h1>Today:@DateTime.Now</h1>
+<p>
+    @{
+        int x = 10;
+        int y = 50;
+        int z = x * y;
+        @z
+    }-->
+    @*@</p>
+            <h1>message:@ViewBag.msg</h1>
+            <ol>
+                @foreach(var emp in ViewBag.employees)
+                        {
+                            <li>@emp</li>
+                        }
+            </ol>
+            <h1>message:@ViewData["msg"]</h1>
+        <ol>
+            @foreach(var emp in(List<string>) ViewData["employees"])
+            {
+                <li>@emp</li>
+            }
+        </ol>        *@
+    <!--<h1>emp id:/model.id</h1>
+    <h1>emp name:/model.name</h1>
+    <h1>emp sal:/model.sal</h1>
+
+
+    <h2>Index</h2>-->
+<!--<h2> Employee Details</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Address</th>
+    </tr>
+    @foreach (var data in Model)
+    {     <tr>
+
+    <td>@data.id</td>
+    <td>@data.EName</td>
+    <td>@data.Email</td>
+    <td>@data.Gender</td>
+    <td>@data.Address</td>
+
+
+       </tr>  
+    
+
+    }
+</table>-->
+@*<h1>this is .net batch:@ViewBag.msg</h1>*@
+
